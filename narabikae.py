@@ -91,7 +91,7 @@ class Q_learning(object):
                 if done:
                     break
             #学習結果の表示
-            print("episode: {0} steps: {1}".format(episode,i))
+            print("episode: {0} steps: {1}".format(episode+1,i+1))
             self.x.append(episode)
             self.y.append(i)
         self.y = self.moving_average(self.y, 100)
